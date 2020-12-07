@@ -1,0 +1,20 @@
+:host {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    border-left: lightgrey solid .15rem;
+    padding-left: .5rem;
+}
+
+p {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.attribute {
+    margin-top: 1rem;
+}

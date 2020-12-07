@@ -1,8 +1,9 @@
-import { html, LitElement, property } from 'lit-element'
+import { customElement, html, LitElement, property } from 'lit-element'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import { default as style }           from './modern-header.css'
+import { default as style }                          from './modern-header.css'
 
+@customElement('modern-header')
 export class ModernHeader extends LitElement {
 
   @property() title = 'no title'

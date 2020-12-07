@@ -1,20 +1,26 @@
-   ```js script
+```js script
 import '../dist/index.js'
 import { html } from 'lit-element'
 ```
 # Demo
 
-This a simple demo of the `mdjs` capabilities.
+This a simple demo of the `mdjs` capabilities. The components are provided as an example
 
 [bundle stats](../dist/stats.html)
 
 ## `modern-header`
 
+A header component for laying down a bold title and description.
+<wc-meta href="../dist/modern-header.json"></wc-meta>
+
 ```html preview-story
 <modern-header title="A Title">Some nice description</modern-header>
 ```
 
+
 ## `modern-grid`
+A simple grid component for laying out content.
+<wc-meta href="../dist/modern-grid.json"></wc-meta>
 
 ```html preview-story
 <modern-grid>
@@ -34,6 +40,9 @@ This a simple demo of the `mdjs` capabilities.
 ```
 
 ## `modern-card`
+ 
+A simple card component.
+<wc-meta href="../dist/modern-card.json"></wc-meta>
 
 ```html preview-story
 <modern-card header="?">
@@ -49,6 +58,8 @@ This a simple demo of the `mdjs` capabilities.
 ```
 
 ## `modern-grid` with `modern-card`
+Combining the card with the grid components.
+
 
 ```html preview-story
 <modern-grid>
@@ -71,6 +82,7 @@ This a simple demo of the `mdjs` capabilities.
 ```
 
 ## `modern-footer`
+<wc-meta href="../dist/modern-footer.json"></wc-meta>
 
 ```html preview-story
 <modern-footer>This is the footer</modern-footer>

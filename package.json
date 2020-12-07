@@ -14,7 +14,7 @@
         "bundle": "rollup -c rollup.config.js",
         "docs": "es-dev-server .",
         "build:clean": "rm -rf ./.coverage ./dist ./reports ./exports ./results",
-        "build:wcspec": "wca --format json --outDir dist src/*.ts",
+        "build:wcspec": "wca --format json --outDir dist src/**/*.ts",
         "build:test": "web-test-runner **/*.test.ts --node-resolve --coverage --playwright --browsers chromium firefox webkit",
         "build:bundle": "npm run build:clean && rollup -c rollup.config.js --environment BUILD:production && npm run build:wcspec",
         "watch:bundle": "rollup -c rollup.config.js --watch",

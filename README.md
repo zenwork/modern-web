@@ -40,6 +40,13 @@ npm run watch:start
 npm run watch:test
 ```
 
+Run the docs with:
+
+```shell
+npm run docs
+
+```
+
 ### NPM scripts
 
 The integration of the modern-web features are split pretty cleanly into separate scripts
