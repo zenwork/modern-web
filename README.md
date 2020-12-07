@@ -77,8 +77,3 @@ The integration of the modern-web features are split pretty cleanly into separat
 * `watch:bundle` - bundle project on file change
 * `watch:start` - live code the project
 * `watch:test` - run all tests in chrome only on file change 
-                                 
-
-## To Do:
-* create simple test
-* add some e2e test that proves most features work
