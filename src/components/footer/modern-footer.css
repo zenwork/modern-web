@@ -1,0 +1,13 @@
+:host {
+    display: grid;
+    width: 100%;
+    margin: 0;
+}
+
+div {
+    justify-self: center;
+}
+
+::slotted(*) {
+    font-weight: lighter;
+}

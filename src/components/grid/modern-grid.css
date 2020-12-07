@@ -1,0 +1,27 @@
+:host{
+    width: 100%;
+    padding: 0;
+    margin: 0 0 4rem;
+}
+
+section {
+    width: 100%;
+    display: grid;
+    justify-self: center;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-self:center ;
+    justify-content: space-evenly;
+}
+
+
+
+::slotted(*) {
+    width: 25%;
+    margin: 1rem;
+}

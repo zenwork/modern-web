@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Web Seed</title>
+    <style>
+        :not(:defined) {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <modern-header title="Modern-Web Project">
+        This is an opinionated seed project that combines <a href="https://modern-web.dev/" target="_blank">modern-web</a> features
+    </modern-header>
+    <modern-grid>
+        <modern-card header="!">
+            <span slot="header">Dev & Test</span>
+            <div slot="body">
+                <p>Combines Typescript, Lit-Element, and Css-in-Css with es-web-dev's es6 module reloading.</p>
+                <p>Run a single suite of tests in multiple browsers with mocha & playwright.</p>
+                <p>Typescript maps make in-browser and in-IDE debugging, in test and in production code an easy thing!</p>
+            </div>
+        </modern-card>
+        <modern-card header="*">
+            <span slot="header">Build</span>
+            <div slot="body">
+                <p>Use Roll-up to bundle everything for production</p>
+                <p>Uses a set of shared Roll-up plugins across live-coding, testing, and bundling</p>
+            </div>
+        </modern-card>
+        <modern-card header="?">
+            <span slot="header">Documentation</span>
+            <div slot="body">
+                <p>Use <code>mdjs</code> instead of storybook to demo and document components</p>
+                <p>Generate web component descriptors</p>
+            </div>
+        </modern-card>
+    </modern-grid>
+    <modern-footer>This project can be adapted for browser libraries or for web-sites/app development.</modern-footer>
+    <script type="module" src="../src/index.ts"></script>
+</body>
+</html>

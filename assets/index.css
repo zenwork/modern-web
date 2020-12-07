@@ -1,0 +1,7 @@
+body{
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    margin:0;
+}
