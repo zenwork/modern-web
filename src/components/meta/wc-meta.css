@@ -1,10 +1,31 @@
 :host {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto;
     width: 100%;
-    margin: 0;
+    margin: 2rem 0 4rem;
     padding: 0;
 }
+
+#description {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: .3em;
+}
+
+#summary {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+}
+
+ label{
+    font-weight: bold;
+}
+
 
 section {
     border-left: lightgrey solid .15rem;

@@ -3,6 +3,12 @@ import { customElement, html, LitElement } from 'lit-element'
 // @ts-ignore
 import { default as style }                from './modern-grid.css'
 
+/**
+ * Grid component for laying out cards or some other content.
+ *
+ * @element modern-grid
+ *
+ */
 @customElement('modern-grid')
 export class ModernGrid extends LitElement {
 

@@ -4,6 +4,7 @@
     "description": "My lib or app",
     "main": "src/index.ts",
     "module": "src/index.ts",
+    "type": "module",
     "scripts": {
         "start": "web-dev-server --open assets/index.html --node-resolve",
         "lint": "eslint . --ext .ts",
@@ -12,11 +13,11 @@
         "test": "web-test-runner **/*.test.ts --node-resolve --watch --coverage",
         "prepare": "npm run lint && npm run build:test && npm run build:bundle",
         "bundle": "rollup -c rollup.config.js",
-        "docs": "es-dev-server .",
+        "docs": "es-dev-server --config es-dev-server.config.cjs .",
         "build:clean": "rm -rf ./.coverage ./dist ./reports ./exports ./results",
         "build:wcspec": "wca --format json --outDir dist src/**/*.ts",
         "build:test": "web-test-runner **/*.test.ts --node-resolve --coverage --playwright --browsers chromium firefox webkit",
-        "build:bundle": "npm run build:clean && rollup -c rollup.config.js --environment BUILD:production && npm run build:wcspec",
+        "build:bundle": "npm run build:clean && npm run tsc && rollup -c rollup.config.js --environment BUILD:production && npm run build:wcspec",
         "watch:bundle": "rollup -c rollup.config.js --watch",
         "watch:start": "web-dev-server --open assets/index.html --node-resolve --watch",
         "watch:test": "web-test-runner **/*.test.ts --node-resolve --watch --coverage"

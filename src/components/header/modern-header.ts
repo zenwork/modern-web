@@ -3,9 +3,18 @@ import { customElement, html, LitElement, property } from 'lit-element'
 // @ts-ignore
 import { default as style }                          from './modern-header.css'
 
+/**
+ * Header component for capturing a title and a short description.
+ *
+ * @element modern-header
+ */
 @customElement('modern-header')
 export class ModernHeader extends LitElement {
 
+  /**
+   * @attr {string} title - title to display
+   * @type {string}
+   */
   @property() title = 'no title'
 
   static styles = [style]
