@@ -1,5 +1,5 @@
 module.exports = {
   extends: [
-    './config/.eslintrc.js'
+    './config/.eslintrc.cjs'
   ]
 }
