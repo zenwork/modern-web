@@ -1,14 +1,15 @@
-# Modern-Web Dev Setup
+# Modern-Web Setup
 
 I have developed this project setup as a good starting point for non-trivial web-based libraries or app projects written with [Typescript](https://www.typescriptlang.org/) and [Lit-Element](https://lit-element.polymer-project.org/). It integrates all the great work coming out of the [modern-web](https://modern-web.dev/), [open-wc](https://open-wc.org/), and [Polymer Project](https://www.polymer-project.org/) communities. 
 
 It applies what can be found in their respective documentation in an opinionated way that represents the principles and values I care the most about. It also applies Justin Fugnani's recommendations for publishing web-components (see the checklist below). 
 
-* native es6 module code
-* zero indirection/abstraction between code and web APIs
+* Develop with native es6 module code.
+* Have a great workflow while avoid using single tools that jumble everything.
+* Have zero indirection/abstraction between code and web APIs.
   * no virtual DOM in the app
   * no JSDom in the tests
-* web component based development targeting framework-agnostic integration
+* Integrate web component based development while supporting framework-agnostic integration
 
 
 The primary purpose of this project is to provide the initial technology integration needed for a complete workflow, ready for all phases of a project:
@@ -20,16 +21,14 @@ The primary purpose of this project is to provide the initial technology integra
 
 Once setup you should decide if you are creating a library or an app and reasonably soon make the adaptations that make sense. 
 
-## Resources
+## File Structure
 
-* Modern Web - https://modern-web.dev/
-* Oppen WC - https://open-wc.org/
-    * mdjs - https://open-wc.org/docs/experimental/mdjs/
-* Web Component Libraries
-    * Lit-Element - https://lit-element.polymer-project.org/
-    * Lit-Html - https://lit-html.polymer-project.org/
-* Bundling
-    * Roll-up - https://rollupjs.org/guide/en/
+* `assets` - static assets
+* `config` - shared configuration for web-dev-server, web-test-runner, and rollup
+* `docs` - documentation and demos based on `mdjs` and `web-component-analyzer`
+* `src` - source code
+* `test` - tests
+
 
 ## Usage
 
@@ -79,8 +78,18 @@ The integration of the modern-web features are split cleanly into separate scrip
 * `watch:bundle` - bundle project on file change
 * `watch:start` - live code the project
 * `watch:test` - run all tests in chrome only on file change 
-                
 
+## Resources
+
+* Modern Web - https://modern-web.dev/
+* Oppen WC - https://open-wc.org/
+    * mdjs - https://open-wc.org/docs/experimental/mdjs/
+* Web Component Libraries
+    * Lit-Element - https://lit-element.polymer-project.org/
+    * Lit-Html - https://lit-html.polymer-project.org/
+* Bundling
+    * Roll-up - https://rollupjs.org/guide/en/
+    
 
 ## Web Component Checklist
 
